@@ -1,120 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Next Level Design</title>
-<!-- Bootstrap CSS -->
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-<style>
-    body {
-        background-color: #333333;
-        color: #FFFFFF;
-    }
-    .navbar {
-        background-color: #222222;
-    }
-    .navbar-brand,
-    .navbar-nav .nav-link {
-        color: #FFFFFF;
-    }
-    .footer {
-        background-color: #222222;
-        color: #FFFFFF;
-        text-align: center;
-        padding: 20px 0;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Level Design</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3gDL9McyGq4STElv/lwp6bQYrrScbNLrvo/x3tcq6b8f0/dB4qOYfGTzBf"
+        crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #343a40 !important;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
+
+        .jumbotron {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .game-card {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Next Level Design</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#games">Games</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="#">Next Level Design</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#games">Games</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+    <div class="container mt-4">
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to Next Level Design</h1>
+            <p class="lead">We create high fantasy action games that will take you to a whole new level of gaming experience.</p>
+        </div>
 
-<div id="home" class="container mt-5">
-    <h1>Welcome to Next Level Design</h1>
-    <p>Next Level Design is a game development company specializing in high fantasy action games.</p>
-</div>
-
-<div id="games" class="container mt-5">
-    <h2>Our Games</h2>
-    <div class="row">
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="belligerent.jpg" class="card-img-top" alt="Belligerent">
-                <div class="card-body">
-                    <h5 class="card-title">Belligerent</h5>
-                    <p class="card-text">An epic high-fantasy action RPG where you embark on a journey to save the realm from dark forces.</p>
+        <section id="games">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card game-card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Belligerent">
+                        <div class="card-body">
+                            <h5 class="card-title">Belligerent</h5>
+                            <p class="card-text">Experience epic battles and strategic gameplay in the world of Belligerent.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card game-card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Deathsinger">
+                        <div class="card-body">
+                            <h5 class="card-title">Deathsinger</h5>
+                            <p class="card-text">Unleash your powers as the Deathsinger and conquer the dark forces.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card game-card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Awaken">
+                        <div class="card-body">
+                            <h5 class="card-title">Awaken</h5>
+                            <p class="card-text">Embark on a journey of awakening and discovery in a mystical realm.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="deathsinger.jpg" class="card-img-top" alt="Deathsinger">
-                <div class="card-body">
-                    <h5 class="card-title">Deathsinger</h5>
-                    <p class="card-text">A dark and mysterious adventure where you play as a legendary warrior fighting against ancient evils.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="awaken.jpg" class="card-img-top" alt="Awaken">
-                <div class="card-body">
-                    <h5 class="card-title">Awaken</h5>
-                    <p class="card-text">Unleash your inner hero in this action-packed fantasy world filled with magic and danger.</p>
-                </div>
-            </div>
-        </div>
+        </section>
     </div>
-</div>
 
-<div id="contact" class="container mt-5">
-    <h2>Contact Us</h2>
-    <form>
-        <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+    <footer class="footer mt-4">
+        <div class="container">
+            <span>&copy; 2024 Next Level Design. All rights reserved.</span>
         </div>
-        <div class="form-group">
-            <label for="email">Your Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-        </div>
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-    </form>
-</div>
+    </footer>
 
-<footer class="footer mt-5">
-    <div class="container">
-        <p>&copy; 2024 Next Level Design. All rights reserved.</p>
-    </div>
-</footer>
-
-<!-- Bootstrap JS and dependencies -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-QEeGW9qI9AWDJ2G4erB7xN7T0UukBoEfr0RTK2lXgSUEuP5pGRVw6ltntJMNUAEE"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyE9a/O7CtfIY3jWugDv9B6I/J2bW+XG7c"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
