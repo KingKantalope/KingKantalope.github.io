@@ -12,7 +12,31 @@
       background-color: #333;
       color: #fff;
     }
-    /* Add more custom styles as needed */
+  
+    /* Adjust button styles for increased contrast */
+    .btn {
+      background-color: #FF8C00; /* Dark orange background color */
+      border: 2px solid #FF8C00; /* Dark orange border */
+      color: #fff; /* White text color */
+    }
+  
+    .btn:hover {
+      background-color: #FF4500; /* Extra dark orange on hover */
+      border: 2px solid #FF8C00; /* Dark orange border */
+      color: #fff; /* White text color on hover */
+    }
+
+    /* Adjust nav-link color for increased contrast */
+    .nav-link {
+      color: #FFA500; /* Light orange color for nav-links */
+    }
+
+    /* Adjust nav-link color for increased contrast */
+    .nav-link:hover {
+      color: #FF8C00; /* Light orange color for nav-links */
+    }
+  
+    /* Additional custom styles as needed */
   </style>
 </head>
 <body>
@@ -44,13 +68,16 @@
     </div>
     <div class="row">
       <div class="col">
-        <h2>Games</h2>
-        <div class="card" style="width: 18rem;">
-          <img src="game1.jpg" class="card-img-top" alt="Belligerent">
-          <div class="card-body">
-            <h5 class="card-title">Belligerent</h5>
-            <p class="card-text">Description of Belligerent game.</p>
-            <a href="#" class="btn btn-primary">More Details</a>
+        <!-- Updated Button Text and Card Text Color -->
+        <div class="container">
+          <h2>Games</h2>
+          <div class="card" style="width: 18rem;">
+            <img src="game1.jpg" class="card-img-top" alt="Belligerent">
+            <div class="card-body" style="color: black;"> <!-- Change text color to black -->
+              <h3 class="card-title" style="color: black;">Belligerent</h3> <!-- Change text color to black -->
+              <p class="card-text">Description of Belligerent game.</p>
+              <a href="#" class="btn btn-primary">Game Page</a> <!-- Updated button text -->
+            </div>
           </div>
         </div>
         <!-- Repeat the above card structure for other games -->
